@@ -25,7 +25,9 @@
     class Factory{
         constructor(product){
             if(product === 'A'){
-                return new Product
+                return new ProductA()
+            }else if(product == 'B'){
+                return new ProductB()
             }
         }
     }
@@ -154,8 +156,8 @@ console.log(children.value) // 12
 ```
 8. 
     1. 有了其他矩形的宽高和坐标,就已知了危险区域
-    1. 判断目标坐标是否有足够的空间可以放下目标矩形
+    1. 判断目标坐   标是否有足够的空间可以放下目标矩形
     1. 若没有, 向右,向左查找足够宽度的安全区域, 向上,向下查找是否有足够高度的区域
     1. 对比最近的区域
-    
+
     ![](./target.png)
